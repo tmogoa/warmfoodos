@@ -49,9 +49,7 @@ int WarmFoodOS::getStartTime(){
 
 void WarmFoodOS::soundOutput(){
   int delayDur = 1000;
-  tone(BUZZER, 20000);
-  Serial.println("buzzer on");
-  
+  tone(BUZZER, 20000);  
 }
 
 void WarmFoodOS::setStartTime(int startTime){
@@ -88,7 +86,7 @@ void WarmFoodOS::turnOff() {
   lcd.setCursor(0, 0);
   lcd.print("shutting");
   lcd.setCursor(8, 1);
-  lcd.print("down");
+  lcd.print("down...");
   delay(3000);
   lcd.clear();
 }
